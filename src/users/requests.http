@@ -1,0 +1,39 @@
+### create a new user
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+    "email": "unique@2test.com",
+    "password":"1234"
+}
+
+### Sign in a user
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+    "email": "unique@2test.com",
+    "password":"1234"
+}
+
+
+### Find a user id
+GET http://localhost:8080/auth/5
+Content-Type: application/json
+
+### Find all users with given email
+GET http://localhost:8080/auth?email=test3@test.com
+Content-Type: application/json
+
+### Delete a user
+DELETE http://localhost:8080/auth/5
+Content-Type: application/json
+
+### Update a user
+
+PATCH http://localhost:8080/auth/2
+Content-Type: application/json
+
+{
+    "email": "islam@gmail.com"
+}
